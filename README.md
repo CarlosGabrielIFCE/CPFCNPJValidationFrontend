@@ -1,27 +1,32 @@
-# CpfCnpjValidationFrontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
 
-## Development server
+# Validador de CPFs e CNPJs(Frontend)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Esse projeto é um complemento frontend da aplicação de Validação de CPFs e CNPJs desenvolvido utilizando o Spring Boot.
+Foi desenvolvimento utilizando o Angular e componentes do Material Design para estilização.
 
-## Code scaffolding
+## Instalação
+  - Baixe o arquivo ZIP do repositório ou faça um clone deste em sua máquina.
+  - Descompacte o arquivo em sua máquina e abra-o em sua IDE de preferência(para desenvolvimento, utilizei o Visual Studio Code)
+  - Abra um Prompt de Comando, entre na pasta do projeto e execute o comando ``` npm install ``` (é necessário ter o npm instalado em sua máquina.)
+  - Execute o comando ``` npm start ``` para rodar o projeto em sua máquina.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Detalhes
 
-## Build
+Seguem abaixo as Dependências que foram utilizadas:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+  - ``` HttpCliente ```
+  - ``` ngx-toastr ``` 
+  - ``` ngx-mask ```
 
-## Running unit tests
+### Demonstração
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Para ilustrar a utilização do aplicativo, você pode fazer o download do repositório e rodar em sua máquina.
+Foi feito também um deploy para o Heroku, onde é possível fazer as requisições utilizando a sua ferramenta
+de envio de requisições REST de preferência.
 
-## Running end-to-end tests
+URL de requisição da API: [Clique aqui](https://dashboard.heroku.com/apps/fast-hamlet-37361)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
