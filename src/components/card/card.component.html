@@ -1,0 +1,14 @@
+<div class="card">
+  <mat-card style="width: 50%">
+    <mat-card-title>
+      Validador de CPFs/CNPJs
+    </mat-card-title>
+    <mat-card-subtitle>
+      Digite aqui seu CPF e CNPJ para validar seu cliente
+    </mat-card-subtitle>
+    <mat-card-content>
+      <input nccCpfCnpjMask  [(ngModel)]="value" style="background-color: #ededed;border-width: 0px;border-radius: 5px; margin-right: 10%; width: 200px; height: 30px" placeholder="Digite aqui...">
+      <button mat-raised-button color="primary" (click)="validateCpf()">Consultar</button>
+    </mat-card-content>
+  </mat-card>
+</div>
