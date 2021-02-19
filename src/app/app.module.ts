@@ -9,12 +9,13 @@ import { MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonModule} from '@angular/material/button';
-import { NgxCpfCnpjModule } from  'ngx-cpf-cnpj';
 import { HeaderComponent } from '../components/header/header.component';
 import { CardComponent } from '../components/card/card.component';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule }   from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { NgxMaskModule } from 'ngx-mask'
 
 @NgModule({
   declarations: [
@@ -29,12 +30,13 @@ import { ToastrModule } from 'ngx-toastr';
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
-    NgxCpfCnpjModule,
+    NgxMaskModule.forRoot(),
     MatInputModule,
     MatButtonModule,
     FormsModule,
     HttpClientModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

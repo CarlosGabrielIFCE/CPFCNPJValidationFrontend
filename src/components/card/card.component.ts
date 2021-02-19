@@ -8,6 +8,7 @@ import {ApiService} from '../../services/api.service';
 })
 export class CardComponent implements OnInit {
   value: string;
+  isCnpj: boolean = true;
 
   constructor(private apiService: ApiService) { }
 
@@ -19,5 +20,13 @@ export class CardComponent implements OnInit {
     let response = this.apiService.validateCpf(unmaskedValue);
     console.log(response);
   }
+
+  isCPF(): boolean{
+    return this.value == null ? true : this.value.length < 12 ? true : false;
+ }
+
+ getCpfCnpjMask(): string{
+    return this.isCPF() ? '000.000.000-009' : '00.000.000/0000-00';
+ }
 
 }

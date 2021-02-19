@@ -25,6 +25,7 @@
     "@nbfontana/ngx-br": "^1.0.0-rc.4.0.2",
     "express": "^4.17.1",
     "ngx-cpf-cnpj": "^4.0.0",
+    "ngx-mask": "^11.1.4",
     "ngx-toastr": "^13.2.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",

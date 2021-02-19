@@ -14,16 +14,16 @@ export class ApiService {
   async validateCpf(value: string) {
     let options = {
       headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
-      id: 1,
-      value
+      value,
+      description: "CPF Requisitado pelo Frontend"
     }
-    await this.http.post(this.baseUrl + "postCpf", options)
+    await this.http.post(this.baseUrl + "api/customers/1/solicitations", options)
       .subscribe((response: any) => {
-        if (response.result.isValid) {
-          this.toastr.success('Boa! Esse CPF não é fraudulento.', 'CPF validado com sucesso!');
+        if (response.valid) {
+          this.toastr.success('Boa! Esse CPF/CNPJ não é fraudulento.', 'CPF/CNPJ validado com sucesso!');
         }
         else {
-          this.toastr.warning('Opa! Talvez você possa estar sendo enganado.', 'CPF não validado com sucesso...');
+          this.toastr.warning('Opa! Talvez você possa estar sendo enganado.', 'CPF/CNPJ não validado com sucesso...');
         }
       })
   }
