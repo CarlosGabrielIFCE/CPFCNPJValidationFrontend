@@ -1,0 +1,10 @@
+{
+
+  "/cpf-cnpj-api/*": {
+    "target": "https://stark-tor-87979.herokuapp.com/",
+    "pathRewrite": { "^/cpf-cnpj-api": "" },
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}

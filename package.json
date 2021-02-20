@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "postinstall": "ng build --aot --prod",
+    "postinstall": "ng build --aot --prod --proxy-config proxy-prod.conf.json",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
