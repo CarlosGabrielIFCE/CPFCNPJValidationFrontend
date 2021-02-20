@@ -63,11 +63,13 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "cpf-cnpj-validation-frontend:build"
+            "browserTarget": "cpf-cnpj-validation-frontend:build",
+            "proxyConfig": "src/proxy.conf.json"
           },
           "configurations": {
             "production": {
-              "browserTarget": "cpf-cnpj-validation-frontend:build:production"
+              "browserTarget": "cpf-cnpj-validation-frontend:build:production",
+              "proxyConfig": "src/proxy.conf.json"
             }
           }
         },
