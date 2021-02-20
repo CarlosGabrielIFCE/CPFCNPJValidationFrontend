@@ -4,39 +4,47 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import { MatIconModule} from '@angular/material/icon';
-import {MatCardModule} from '@angular/material/card';
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatButtonModule} from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 import { HeaderComponent } from '../components/header/header.component';
 import { CardComponent } from '../components/card/card.component';
-import {MatInputModule} from '@angular/material/input';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
-import {MatSlideToggleModule} from '@angular/material/slide-toggle';
-import { NgxMaskModule } from 'ngx-mask'
+import { NgxMaskModule } from 'ngx-mask';
+import { PaymentCardComponent } from '../components/payment-card/payment-card.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    CardComponent
+    CardComponent,
+    PaymentCardComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatGridListModule,
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
-    NgxMaskModule.forRoot(),
     MatInputModule,
     MatButtonModule,
+    MatSlideToggleModule,
+    MatSidenavModule,
+    MatListModule,
     FormsModule,
-    HttpClientModule,
+    NgxMaskModule.forRoot(),
     ToastrModule.forRoot(),
-    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

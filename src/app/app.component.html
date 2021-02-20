@@ -1,2 +1,20 @@
-<app-header></app-header>
-<app-card></app-card>
+<mat-drawer-container class="container" autosize>
+  <mat-drawer #drawer class="sidenav" mode="side">
+    <p>Auto-resizing sidenav</p>
+    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      Toggle extra text
+    </button>
+  </mat-drawer>
+
+  <div>
+    <mat-toolbar>
+      <button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Validador de CPFs e CNPJs</span>
+    </mat-toolbar>
+    <app-card></app-card>
+  </div>
+
+</mat-drawer-container>
