@@ -2,9 +2,8 @@
   <mat-drawer #drawer class="sidenav" mode="side">
     <p>Auto-resizing sidenav</p>
     <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-    <button (click)="showFiller = !showFiller" mat-raised-button>
-      Toggle extra text
-    </button>
+    <a mat-list-item [routerLink]="'/app-solicitations'"> Solicitações </a>
+    <a mat-list-item [routerLink]="'/app-payments'"> Pagamentos </a>
   </mat-drawer>
 
   <div>
@@ -14,7 +13,7 @@
       </button>
       <span>Validador de CPFs e CNPJs</span>
     </mat-toolbar>
-    <app-card></app-card>
+    <router-outlet></router-outlet>
   </div>
 
 </mat-drawer-container>
