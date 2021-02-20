@@ -21,6 +21,8 @@ import { FormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxMaskModule } from 'ngx-mask';
 import { PaymentCardComponent } from '../components/payment-card/payment-card.component';
+import { SolicitationsComponent } from 'src/components/solicitations/solicitations.component';
+import { PaymentsComponent } from 'src/components/payments/payments.component';
 
 
 
@@ -28,6 +30,8 @@ import { PaymentCardComponent } from '../components/payment-card/payment-card.co
   declarations: [
     AppComponent,
     HeaderComponent,
+    SolicitationsComponent,
+    PaymentsComponent,
     CardComponent,
     PaymentCardComponent
   ],
