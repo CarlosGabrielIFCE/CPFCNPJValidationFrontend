@@ -7,7 +7,7 @@ import { ToastrService } from 'ngx-toastr';
   providedIn: 'root'
 })
 export class ApiService {
-  baseUrl: string = 'cpf-cnpj-api/';
+  baseUrl: string = 'https://stark-tor-87979.herokuapp.com/';
 
   constructor(private http: HttpClient, private toastr: ToastrService) { }
 
