@@ -25,7 +25,7 @@ Para ilustrar a utilização do aplicativo, você pode fazer o download do repos
 Foi feito também um deploy para o Heroku, onde é possível fazer as requisições utilizando a sua ferramenta
 de envio de requisições REST de preferência.
 
-Link de Demonstração: [Clique aqui](https://dashboard.heroku.com/apps/fast-hamlet-37361)
+Link de Demonstração: [Clique aqui](https://fast-hamlet-37361.herokuapp.com/)
 
 
 
