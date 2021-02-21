@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { ToastrService } from 'ngx-toastr';
+import { rejects } from 'assert';
 
 
 @Injectable({
@@ -26,5 +27,15 @@ export class ApiService {
           this.toastr.warning('Opa! Talvez você possa estar sendo enganado.', 'CPF/CNPJ não validado com sucesso...');
         }
       })
+  }
+
+  valuePayment(value?: string) {
+    return new Promise((resolve) => {
+      let url = value ? `api/customers/3/payment/${value}` : `api/customers/3/payment`;
+      this.http.get(this.baseUrl + url)
+        .subscribe((response) => {
+          resolve(response);
+        })
+    });
   }
 }

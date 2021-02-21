@@ -4,6 +4,7 @@ import { PaymentsComponent } from '../components/payments/payments.component';
 import { SolicitationsComponent } from '../components/solicitations/solicitations.component';
 
 const routes: Routes = [
+  { path: '', component: SolicitationsComponent },
   { path: 'app-payments', component: PaymentsComponent},
   { path: 'app-solicitations', component: SolicitationsComponent},
 ];
